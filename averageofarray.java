@@ -6,8 +6,9 @@ public static void main(String[]args){
 	int avg=0;
 	for (int i=0;i<arr.length;i++){
 		sum=sum+arr[i];
-		avg=sum/arr.length;
+		
 		}
+	avg=sum/arr.length;
 	System.out.println("Average of Array is "+avg);
 	}
 }
