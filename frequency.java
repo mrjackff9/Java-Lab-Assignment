@@ -12,14 +12,15 @@ class frequency{
             for(int j=i+1;j<s.length();j++){
                 if(a[i] == a[j]){
                     freq[i]++;
-                    a[j] ='0';
+            //Set a[j] to 0 to avoid printing visited character.
+                a[j]='0';
                 }
             }
         }
         System.out.println("Frequency of the Characters");
         for(int i=0;i<freq.length;i++){
         if(a[i] != ' ' &&  a[i] !='0')
-            System.out.println(a[i]+"            " + freq[i]);
+            System.out.println(a[i]+" " + freq[i]);
         }
     }
 }
